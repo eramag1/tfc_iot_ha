@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>ANOMALIES</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="/static/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="/static/assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="/static/assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="{{ url_for('index') }}" class="logo"><strong>Anomaly</strong> <span>Detection</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="{{ url_for('create_entity') }}">Create Entity</a></li>
+							<li><a href="{{ url_for('list_entities') }}">List Entities</a></li>
+                            <li><a href="{{ url_for('send_bulk_request') }}">Send massive request</a></li>
+                        </ul>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>Anomaly Detection</h1>
+							</header>
+							<div class="content">
+								<p>A page for anomaly detection<br />
+								and can create Entity and find in Orion Context Broker</p>
+								<ul class="actions">
+									<li><a href="#one" class="button next scrolly">Get Started</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one" class="tiles">
+                                <article>
+									<span class="image">
+										<img src="/static/images/sendMassive.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{{ url_for('send_bulk_request') }}" class="link">Send massive request</a></h3>
+										<p>Send multiple update device commands with de same o different source IP</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="/static/images/create.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{{ url_for('create_entity') }}" class="link">Create Entity</a></h3>
+										<p>Create an entity with id/type</p>
+									</header>
+								</article>
+								<article>
+									<span class="image">
+										<img src="/static/images/list.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="{{ url_for('list_entities') }}" class="link">List Entities</a></h3>
+										<p>List Entities</p>
+									</header>
+								</article>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled</li>
+								<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/static/assets/js/skel.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/static/assets/js/main.js"></script>
+
+	</body>
+</html>
